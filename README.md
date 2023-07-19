@@ -42,9 +42,9 @@ Whole-mount 2-photon imaging
 │   │   ├── vacuoles/
 			├── mesh-*.stl 
 		├── wholebrain/
-			├── wholebrain.stl
-			
+			├── wholebrain.stl 
 
+			
 ## Python script to quantify vacuoles
 
 ```bash
