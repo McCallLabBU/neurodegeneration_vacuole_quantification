@@ -37,13 +37,13 @@ Whole-mount 2-photon imaging
 ### 1c. Organize the mesh files
 
 - Place the mesh files corresponding to each brain in the following hierarchy 
-	|- inputs/
-		|-- conditionName/
-				|---vacuoles/
-					|---- mesh-1-n.stl 
-				|---wholebrain/
-					|---- wholebrain.stl 
-
+├── inputs/
+│   ├── conditionName/
+│   │   ├── vacuoles/
+			├── mesh-*.stl 
+		├── wholebrain/
+			├── wholebrain.stl
+			
 
 ## Python script to quantify vacuoles
 
