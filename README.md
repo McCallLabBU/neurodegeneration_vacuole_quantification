@@ -1,5 +1,6 @@
-# neurodegeneration_vacuole_quantification
+# Neurodegeneration Vacuole Quantification
 Scripts for vacuole quantification in 3D 2-photon images of D. melanogaster brain 
+(Original publication: https://pubmed.ncbi.nlm.nih.gov/36711924/)
 
 # Aim
 
@@ -34,17 +35,7 @@ Whole-mount 2-photon imaging
 - Repeat the above steps to annotate the whole brain  
 - Download the mesh for vacuoles and whole brain as stl files 
 
-### 1c. Organize the mesh files
 
-- Place the mesh files corresponding to each brain in the following hierarchy 
-├── inputs/
-│   ├── conditionName/
-│   │   ├── vacuoles/
-			├── mesh-*.stl 
-		├── wholebrain/
-			├── wholebrain.stl 
-
-			
 ## Python script to quantify vacuoles
 
 ```bash
@@ -53,19 +44,21 @@ python3 -m venv vacuolequant
 source vacuolequant/bin/activate
 
 # Install necessary packages
-pip3 install --user ipykernel # Jupyter notebook
-pip3 install numpy-stl # Mesh quantification
-pip3 install matplotlib # Plotting library
+pip3 install ipykernel 
+pip3 install numpy-stl 
+pip3 install matplotlib 
+pip3 install seaborn
+pip3 install numpy 
+pip3 install pandas 
 
 # Create Jupyter notebook kernel
 python3 -m ipykernel install --name=vacuolequant
 jupyter notebook 
 
-# Run notebook for vacuole quantification 
+# Run notebook for vacuole quantification, statistical analysis, and visualization
 - quantify_vacuoles.ipynb
 
-# Run notebook for statistical analysis 
-- test_difference.ipynb 
+
 
 ```
 
