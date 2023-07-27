@@ -4,7 +4,7 @@ Scripts for vacuole quantification in 3D 2-photon images of D. melanogaster brai
 
 # Aim
 
-To identify whether there is a statistically significant difference in the **number, size,** and **spatial distribution** of neurodegeneration vacuoles in drpr -/- vs w1118 brains in whole-mount 2-photon microscopy images. 
+To identify whether there is a statistically significant difference in the **number, size,** and **spatial distribution** of neurodegeneration vacuoles in whole-mount 2-photon microscopy images of _D.melanogaster_ brains
 
 # Data
 
@@ -36,7 +36,7 @@ Whole-mount 2-photon imaging
 - Download the mesh for vacuoles and whole brain as stl files 
 
 
-## Python script to quantify vacuoles
+## 2. Python script to quantify vacuoles
 
 ```bash
 # Create a Python3 virtual environment and activate
@@ -56,9 +56,7 @@ python3 -m ipykernel install --name=vacuolequant
 jupyter notebook 
 
 # Run notebook for vacuole quantification, statistical analysis, and visualization
-- quantify_vacuoles.ipynb
-
-
+quantify_vacuoles.ipynb
 
 ```
 
