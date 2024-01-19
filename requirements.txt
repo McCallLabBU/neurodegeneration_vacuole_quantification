@@ -1,0 +1,9 @@
+pandas==2.1.1
+scipy==1.11.3
+seaborn==0.13.0
+numpy==1.23.4
+numpy-stl
+ipykernel
+jupyter
+matplotlib
+seaborn

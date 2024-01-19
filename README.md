@@ -1,9 +1,11 @@
 # Neurodegeneration Vacuole Quantification
-Scripts for vacuole quantification in 3D 2-photon images of D. melanogaster brain 
+Scripts for vacuole quantification in 3D whole-mount 2-photon images of D. melanogaster brains
 
 (Original publication: https://www.cell.com/iscience/fulltext/S2589-0042(23)02129-6)
-
 Citation : Elguero, J. E., Liu, G., Tiemeyer, K., Bandyadka, S., Gandevia, H., Duro, L., Yan, Z., & McCall, K. (2023). Defective phagocytosis leads to neurodegeneration through systemic increased innate immune signaling. iScience, 0(0). https://doi.org/10.1016/j.isci.2023.108052
+
+Protocol paper for annotating vacuoles and statistical analysis : 
+Citation 
 
 # Aim
 
@@ -46,21 +48,29 @@ Whole-mount 2-photon imaging
 python3 -m venv vacuolequant
 source vacuolequant/bin/activate
 
-# Install necessary packages
+
+# Install all packages at once 
+pip3 install -r requirements.txt
+
+# Alternatively install necessary packages individually 
 pip3 install ipykernel 
 pip3 install numpy-stl 
 pip3 install matplotlib 
 pip3 install seaborn
 pip3 install numpy 
 pip3 install pandas 
+pip3 install jupyter
+pip3 install scipy
+
+
 
 # Create Jupyter notebook kernel
-python3 -m ipykernel install --name=vacuolequant
+python3 -m ipykernel install --name=vacuolequant --user 
 jupyter notebook 
 
 # Run notebook for vacuole quantification, statistical analysis, and visualization
-quantify_vacuoles.ipynb
-
+quantify_vacuoles_fromMesh_LiuBandyadka2024.ipynb # To quantify vacuoles from mesh files 
+quantify_vacuoles_fromWebknossosexport_LiuBandyadka2024.ipynb # To quantify vacuoles from csv files 
 ```
 
 
