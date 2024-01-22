@@ -2,10 +2,12 @@
 Scripts for vacuole quantification in 3D whole-mount 2-photon images of D. melanogaster brains
 
 (Original publication: https://www.cell.com/iscience/fulltext/S2589-0042(23)02129-6)
+
 Citation : Elguero, J. E., Liu, G., Tiemeyer, K., Bandyadka, S., Gandevia, H., Duro, L., Yan, Z., & McCall, K. (2023). Defective phagocytosis leads to neurodegeneration through systemic increased innate immune signaling. iScience, 0(0). https://doi.org/10.1016/j.isci.2023.108052
 
-Protocol paper for annotating vacuoles and statistical analysis : 
-Citation 
+Protocol paper for annotating vacuoles and statistical analysis: 
+
+Citation: 
 
 # Aim
 
@@ -41,6 +43,7 @@ Whole-mount 2-photon imaging
 - Download the mesh for vacuoles and whole brain as stl files 
 
 
+Example annotated data is deposited at Zenodo: 
 ## 2. Python script to quantify vacuoles
 
 ```bash
