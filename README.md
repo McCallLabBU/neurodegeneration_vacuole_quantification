@@ -22,16 +22,33 @@ Whole-mount 2-photon imaging
 
 # Methods
 
-## 1. Webknossos workflow to identify vacuoles
+## 1. Convert raw confocal image files to RBG/8-bit greyscale TIFF format
 
-### 1a. Upload confocal images to webknossos
+Z-stacks acquired from confocal microscopes need to be converted to RGB stacks or 8bit greyscale stacks in the TIFF format for use with WEBKNOSSOS for annotation.
+The FIJI macro provided - `code/maketiff.ijm` can be used to batch process raw images. 
+The macro takes in `.nd2` files and performs the following operations for each `.nd2` file - 
+	
+- split channels
+- merge channels 
+- convert to RGB tiff 
+- convert to 8bit greyscale tiff 
+
+The macro can be modified to work with other common microscopy raw formats such as `.oif`
+When the macro is run in FIJI, it will open a dialog box to select the input folder containing all the `.nd2` files. Once the input folder is selected, another dialog box to get the output destination folder will open up. Once the input and output folder are selected, all the `.nd2` files in the input folder will be converted to RGB stacks and 8-bit greyscale stacks and will be available in the selected destination folder for downstream analysis. 
+Make sure to not include any other files other than the necessary `.nd2` files in the input folder selected. 
+Input `.nd2` files must not contain any spaces or special characters other than underscores in the filename. An example of an ideal input filename is - `best_input_file_123.tif`
+
+
+## 2. Webknossos workflow to identify vacuoles
+
+### 2a. Upload confocal images to webknossos
 
 - Use prairie reader plugin to import xml files into FIJI
 - Convert stack to RGB
 - Save merged RGB z-stacks in Tiff format
 - Upload RGB TIFF z-stacks of individual brains to Webknossos
 
-### 1b. Annotate vacuoles
+### 2b. Annotate vacuoles
 
 - Create a new volume annotation 
 - Identify each vacuole visually. For each vacuole
@@ -44,7 +61,7 @@ Whole-mount 2-photon imaging
 
 
 Example annotated data is deposited at Zenodo: 
-## 2. Python script to quantify vacuoles
+## 3. Python script to quantify vacuoles
 
 ```bash
 # Create a Python3 virtual environment and activate
