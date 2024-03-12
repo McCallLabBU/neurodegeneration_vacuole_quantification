@@ -2,10 +2,13 @@
 Scripts for vacuole quantification in 3D whole-mount 2-photon images of D. melanogaster brains
 
 Main publication: https://www.cell.com/iscience/fulltext/S2589-0042(23)02129-6
+
 Main publication Citation : Elguero, J. E., Liu, G., Tiemeyer, K., Bandyadka, S., Gandevia, H., Duro, L., Yan, Z., & McCall, K. (2023). Defective phagocytosis leads to neurodegeneration through systemic increased innate immune signaling. iScience, 0(0). https://doi.org/10.1016/j.isci.2023.108052
 
 Protocol paper: 
+
 Protocol paper citation: 
+
 Github/Zenodo citation : [![DOI](https://zenodo.org/badge/668340016.svg)](https://zenodo.org/doi/10.5281/zenodo.10810495)
 
 # Aim
