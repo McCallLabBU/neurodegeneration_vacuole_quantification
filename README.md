@@ -5,9 +5,9 @@ Main publication: https://www.cell.com/iscience/fulltext/S2589-0042(23)02129-6
 
 Main publication Citation : Elguero, J. E., Liu, G., Tiemeyer, K., Bandyadka, S., Gandevia, H., Duro, L., Yan, Z., & McCall, K. (2023). Defective phagocytosis leads to neurodegeneration through systemic increased innate immune signaling. iScience, 0(0). https://doi.org/10.1016/j.isci.2023.108052
 
-Protocol paper: 
+Protocol paper: https://www.sciencedirect.com/science/article/pii/S2666166724001825?ref=cra_js_challenge&fr=RR-1
 
-Protocol paper citation: 
+Protocol paper citation: Liu G, Bandyadka S, McCall K. Protocol to analyze 3D neurodegenerative vacuoles in Drosophila melanogaster. STAR Protoc. 2024;5: 103017. doi:10.1016/j.xpro.2024.103017
 
 Github/Zenodo citation : [![DOI](https://zenodo.org/badge/668340016.svg)](https://zenodo.org/doi/10.5281/zenodo.10810495)
 
